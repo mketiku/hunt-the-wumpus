@@ -9,7 +9,7 @@ request format:
 -----------------------------
 | header: | value           | <-- followed by \n\n
 -----------------------------
-|  json encoded message     | 
+|  json encoded message     |
 -----------------------------
 '''
 
