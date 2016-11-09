@@ -3,5 +3,6 @@
     "python.pythonPath": "C:/Users/mketiku/AppData/Local/Programs/Python/Python35-32/python.exe",
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "yapf",
-    "python.formatting.formatOnSave": true
+    "python.formatting.formatOnSave": true,
+    "python.formatting.yapfPath": "C:/Users/mketiku/AppData/Local/Programs/Python/Python35-32/Scripts/yapf.exe"
 }
