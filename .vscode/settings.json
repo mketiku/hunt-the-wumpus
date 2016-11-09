@@ -1,5 +1,5 @@
 {
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": false,
     "python.pythonPath": "C:/Users/mketiku/AppData/Local/Programs/Python/Python35-32/python.exe",
     "python.linting.flake8Enabled": true,
     "python.formatting.provider": "yapf",
