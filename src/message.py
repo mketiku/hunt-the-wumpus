@@ -2,10 +2,15 @@ import datetime
 import json
 '''
 request format:
-| method | path | 
-| server: | fqdn
-| header: | value <-- followed by \n\n
-|  ???? encoded message #TODO
+-----------------------------
+| method | path | proto     |
+-----------------------------
+| server: | fqdn            |
+-----------------------------
+| header: | value           | <-- followed by \n\n
+-----------------------------
+|  json encoded message     | 
+-----------------------------
 '''
 
 
@@ -20,7 +25,7 @@ class request(object):
 
 
 class response(object):
-    format = "%d %"  #TODO
+    format = "%a, %d %b, %Y %H:%M:%S %Z"
 
     def __init__(self):
         self.proto = "HTTP/1.1"
@@ -33,4 +38,4 @@ class response(object):
         now = datetime.datetime.today()
         dt = now.strftime(self.format)
         return self.proto + " " + str(self.code) + " " + self.message + \
-        "\nDate: " + dt + "\n" + self.headers + json.dumps(self.data)
+            "\nDate: " + dt + "\n" + self.headers + json.dumps(self.data)
